@@ -1,0 +1,222 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  color-scheme: light;
+  --background: #f6f1e8;
+  --surface: rgba(255, 250, 242, 0.86);
+  --surface-strong: #fffaf2;
+  --text: #1b1a17;
+  --muted: #6c6459;
+  --accent: #bd5d38;
+  --accent-dark: #8f3f20;
+  --border: rgba(27, 26, 23, 0.1);
+  --success: #256f48;
+  --danger: #a53a2d;
+  --shadow: 0 24px 60px rgba(82, 51, 35, 0.12);
+  --font-sans: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(250, 210, 163, 0.6), transparent 30%),
+    radial-gradient(circle at top right, rgba(189, 93, 56, 0.22), transparent 24%),
+    linear-gradient(180deg, #f3eadb 0%, var(--background) 100%);
+  color: var(--text);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page-shell {
+  width: min(960px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.hero {
+  padding: 2rem 0 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(2.6rem, 5vw, 5rem);
+  line-height: 0.95;
+}
+
+.hero p {
+  max-width: 52rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
+  gap: 1.5rem;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: start;
+}
+
+.card {
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.panel {
+  padding: 1.5rem;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.section-copy {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  grid-gap: 0.85rem;
+  gap: 0.85rem;
+}
+
+.post-item {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(27, 26, 23, 0.08);
+}
+
+.post-item strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.empty-state {
+  margin-top: 1.5rem;
+  padding: 1.1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--muted);
+  border: 1px dashed rgba(27, 26, 23, 0.15);
+}
+
+.form {
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.label {
+  display: grid;
+  grid-gap: 0.45rem;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(27, 26, 23, 0.16);
+  background: var(--surface-strong);
+  color: var(--text);
+}
+
+.input:focus {
+  outline: 2px solid rgba(189, 93, 56, 0.25);
+  border-color: var(--accent);
+}
+
+.button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.9rem 1.2rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+}
+
+.status {
+  min-height: 1.4rem;
+  font-size: 0.95rem;
+}
+
+.status-success {
+  color: var(--success);
+}
+
+.status-error {
+  color: var(--danger);
+}
+
+.api-note {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 800px) {
+  .page-shell {
+    width: min(100% - 1.25rem, 40rem);
+    padding-top: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
